@@ -16,9 +16,10 @@ var studente = {
 var contenitore = "";
 // //verificata l'esistenza dell'oggetto passiamo a ciclare l'oggetto stesso col ciclo for in
 for (var key in studente) {
+// console.log(studente[key]);
   // console.log(key, studente[key]);
   contenitore += studente[key] + " ";
-  console.log(contenitore);
+  // console.log(contenitore);
 }
 
 // //abbiamo ottenuto in console log tutte le proprietà dell'oggetto.
@@ -30,7 +31,34 @@ document.getElementById('stampa').innerHTML = contenitore;
 
 
 //punto 2;
+//creare un array di oggetti di studenti;
+var gruppoStudenti = [
 
-var gruppo = [{
+   {
+    name: "Marco",
+    surname: "Gatti",
+    age: 22
+  },
+   {
+    name: "Luca",
+    surname: "Lolli",
+    age: 24
+  },
+   {
+    name: "Carlo",
+    surname: "Pari",
+    age: 26
+  },
 
-}]
+];
+//cicliamo su tutti gli studenti e stampiamo per ognuno nome e cognome;
+// console.log(gruppoStudenti);
+//verificata l'esistenza del ns array andiamo a fare un ciclo for in e cerchiamo i valori che ci interessano;
+
+contenitore2 = " ";
+for (var key in gruppoStudenti) {
+  console.log(gruppoStudenti[key].name, gruppoStudenti[key].surname);
+  contenitore2 += gruppoStudenti[key].name + " " + gruppoStudenti[key].surname + "<br>";
+}
+
+document.getElementById("stampa2").innerHTML = contenitore2;
