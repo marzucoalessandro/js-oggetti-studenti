@@ -12,17 +12,20 @@ var studente = {
   age: "23"
 };
 // //verifichiamo in console log l'esistenza dell'oggetto.
-console.log(studente);
-var contenitore;
+// console.log(studente);
+var contenitore = "";
 // //verificata l'esistenza dell'oggetto passiamo a ciclare l'oggetto stesso col ciclo for in
 for (var key in studente) {
-  console.log(key, studente[key]);
+  // console.log(key, studente[key]);
+  contenitore += studente[key] + " ";
+  console.log(contenitore);
 }
-
 
 // //abbiamo ottenuto in console log tutte le proprietà dell'oggetto.
 // //adesso le stampiamo a schermo tramite il nostro h1;
-//
+document.getElementById('stampa').innerHTML = contenitore;
+
+
 
 
 
