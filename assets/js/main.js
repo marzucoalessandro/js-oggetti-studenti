@@ -67,11 +67,18 @@ var newName = prompt("Qual'è il tuo nome?");
 var newSurname = prompt("qual'è il tuo cognome?");
 var newAge = Number(prompt("quanti anni hai?"));
 
-newStudent = {
-  name: newName,
-  surname: newSurname,
-  age: newAge
-}
+// creiamo un nuovo oggetto
+newStudent = {};
+
+newStudent.name = newName;
+newStudent.surname = newSurname;
+newStudent.age = newAge;
+
+// newStudent = {
+//   name: newName,
+//   surname: newSurname,
+//   age: newAge
+// }
 
 gruppoStudenti.push(newStudent);
 
