@@ -45,7 +45,7 @@ var gruppoStudenti = [
     surname: "Pari",
     age: 26
   },
-    
+
 ];
 //cicliamo su tutti gli studenti e stampiamo per ognuno nome e cognome;
 // console.log(gruppoStudenti);
@@ -66,5 +66,13 @@ document.getElementById("stampa2").innerHTML = contenitore2;
 var newName = prompt("Qual'è il tuo nome?");
 var newSurname = prompt("qual'è il tuo cognome?");
 var newAge = Number(prompt("quanti anni hai?"));
+
+newStudent = {
+  name: newName,
+  surname: newSurname,
+  age: newAge
+}
+
+gruppoStudenti.push(newStudent);
 
 console.log(gruppoStudenti);
